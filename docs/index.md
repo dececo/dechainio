@@ -8,3 +8,8 @@
 接受ETH，DET，以及各种 ERC20 代币。
 
 ![以太坊地址](ETH_donate.png)
+
+### 微信赞赏码
+接受人民币赞赏，赠人玫瑰，手留余香。
+
+![微信赞赏码](wechat_donate.png)
