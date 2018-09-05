@@ -9,6 +9,8 @@ DechainIO 是 DEC (https://dechain.io) 旗下的付费任务悬赏平台，用�
 
 ## 捐赠地址
 
+我们的项目接受捐赠，包括加密数字货币和其他法币。
+
 ### 以太坊地址 `0x281b498Ef9ECfBE69A94177412b958B679d7dEA2`
 接受ETH，DET，以及各种 ERC20 代币。
 
