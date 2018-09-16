@@ -6,6 +6,7 @@
 <div id="token-donate-widget" data-token-address="0xf72da6e99b864e26e3a386f2cc6022882ecb1125" data-token-decimals="18" data-to-address="0x281b498Ef9ECfBE69A94177412b958B679d7dEA2" data-amounts="100,200,300,400,500"></div>
 ```
 
-其中，默认的Gas是3Gwei，如果遇到网络拥堵，请耐心等待~
-
+其中：
+- `data-to-address`是打赏发送到的地址；
+- 默认的`Gas`是`3Gwei`，如果遇到网络拥堵，请耐心等待;
 具体的网络状况和推荐Gas，参考 https://ethgasstation.info/。
