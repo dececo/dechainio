@@ -16,6 +16,9 @@ DechainIO 是 DEC (https://dechain.io) 旗下的付费任务悬赏平台，用�
 
 ![以太坊地址](ETH_donate.png)
 
+<script type="text/javascript" src="https://github.com/dececo/dechainio/blob/master/missions/mission1/donate.js" charset="utf-8"></script>
+<div id="token-donate-widget" data-token-address="0xf72da6e99b864e26e3a386f2cc6022882ecb1125" data-token-decimals="18" data-to-address="0x281b498Ef9ECfBE69A94177412b958B679d7dEA2" data-amounts="100,200,300,400,500"></div>
+
 ### 微信赞赏码
 接受人民币赞赏，赠人玫瑰，手留余香。
 
