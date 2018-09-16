@@ -8,5 +8,7 @@
 
 其中：
 - `data-to-address`是打赏发送到的地址；
-- 默认的`Gas`是`3Gwei`，如果遇到网络拥堵，请耐心等待;
+- 默认的`Gas`是`3Gwei`，如果遇到网络拥堵，请耐心等待或使用METAMASK直接提高`Gas`;
 具体的网络状况和推荐Gas，参考 https://ethgasstation.info/。
+
+![inc_gas](inc_gas.png)
