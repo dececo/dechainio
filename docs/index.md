@@ -5,7 +5,7 @@
 DechainIO 是 DEC (https://dechain.io) 旗下的付费任务悬赏平台，用于 DEC 社区的任务悬赏。通常的赏金以 [DET](https://github.com/dececo/docs/blob/master/token/det/DET.md) 支付。
 如果对技术沉淀有兴趣，也可以向我们的专栏投稿。
 
-其他未尽事宜，联系微信**grey0805**。
+其他未尽事宜，联系微信 **grey0805**。
 
 ## 捐赠地址
 
