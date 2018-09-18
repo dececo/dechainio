@@ -16,7 +16,7 @@
     function _createElement() {
         var stypeTag = document.createElement("style");
         stypeTag.type = 'text/css';
-        var css = '#token-donate-widget{text-align:center}#token-donate-widget ._btn{min-width:120px;height:40px;line-height:40px;border:0;background-color:#e8705e;color:white;border-radius:20px;font-size:15px;cursor:pointer;padding:0}#token-donate-widget #_shadow{display:none;justify-content:center;align-items:center;position:fixed;top:0;left:0;height:100vh;width:100vw;background-color:rgba(0,0,0,.4)}#token-donate-widget #_shadow ._dialog{position:relative;display:block;width:500px;padding:10px;border-radius:4px;background-color:white;box-shadow:0 5px 25px rgba(0,0,0,0.1)}#token-donate-widget #_shadow ._dialog p{width:100%;font-weight:bold;font-size:20px;color:black}#token-donate-widget #_shadow ._dialog #_close{position:absolute;right:16px;top:16px;font-size:26px;color:rgba(0,0,0,0.5);font-weight:200;cursor:pointer}#token-donate-widget #_shadow ._dialog ._row{display:table;width:100%}#token-donate-widget #_shadow ._dialog ._col{float:left;width:33.33333%;padding:5px;-webkit-box-sizing:border-box;box-sizing:border-box}#token-donate-widget #_shadow ._dialog ._col ._amount{height:56px;width:100%;padding:0;text-align:center;line-height:56px;color:#999;font-size:20px;border-radius:4px;border:1px solid #999;cursor:pointer}#token-donate-widget #_shadow ._dialog ._col ._active{outline:0;color:#e8705e;border:1px solid #e8705e}#token-donate-widget #_shadow ._dialog ._message{font-size:15px;font-weight:inherit}#token-donate-widget #_shadow ._dialog ._message._success{color:#3cbc98}#token-donate-widget #_shadow ._dialog ._message._error{color:#ff4a68}';
+        var css = '#token-donate-widget{text-align:center}#token-donate-widget ._btn{min-width:120px;height:40px;line-height:40px;border:0;background-color:#e8705e;color:white;border-radius:20px;font-size:15px;cursor:pointer;padding:0}#token-donate-widget #_shadow{display:none;justify-content:center;align-items:center;position:fixed;top:0;left:0;height:100vh;width:100vw;background-color:rgba(0,0,0,.4)}#token-donate-widget #_shadow ._dialog{position:relative;display:block;width:500px;padding:10px;border-radius:4px;background-color:white;box-shadow:0 5px 25px rgba(0,0,0,0.1)}#token-donate-widget #_shadow ._dialog p{width:100%;font-weight:bold;font-size:20px;color:black}#token-donate-widget #_shadow ._dialog #_close{position:absolute;right:16px;top:16px;font-size:26px;color:rgba(0,0,0,0.5);font-weight:200;cursor:pointer}#token-donate-widget #_shadow ._dialog ._row{display:table;width:100%}#token-donate-widget #_shadow ._dialog ._col{float:left;width:33.33333%;padding:5px;-webkit-box-sizing:border-box;box-sizing:border-box}#token-donate-widget #_shadow ._dialog ._col ._amount{height:56px;width:100%;padding:0;text-align:center;line-height:56px;color:#999;font-size:20px;border-radius:4px;border:1px solid #999;cursor:pointer}#token-donate-widget #_shadow ._dialog ._col ._active{outline:0;color:#e8705e;border:1px solid #e8705e}#token-donate-widget #_shadow ._dialog ._message{font-size:15px;font-weight:inherit}#token-donate-widget #_shadow ._dialog ._message._success{word-wrap: break-word;color:#3cbc98}#token-donate-widget #_shadow ._dialog ._message._error{word-wrap: break-word;color:#ff4a68}';
         if (stypeTag.styleSheet){
             stypeTag.styleSheet.cssText = css;
         }
@@ -160,7 +160,11 @@
                     if (error) {
                         _showMessage(false, error.message);
                     } else {
-                        _showMessage(true, '打赏成功! 交易地址: https://etherscan.io/tx/' + txHash);
+                        _showMessage(true, '打赏成功! 交易地址: <a href="https://etherscan.io/tx/' + txHash+'" target="_blank">https://etherscan.io/tx/' + txHash+'</a>');
+                        $("#_reward_payment").html("感谢(5秒后关闭)")
+                        setTimeOut(function(){
+                            $("#_shadow").hide()
+                        },5)
                     }
                 });
             }
