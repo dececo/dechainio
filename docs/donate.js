@@ -73,7 +73,7 @@
         if (success === true) {
             messageElement.removeClass('_error');
             messageElement.addClass('_success');
-            messageElement.text(message);
+            messageElement.html(message);
         } else if (success === false) {
             messageElement.removeClass('_success');
             messageElement.addClass('_error');
@@ -86,6 +86,7 @@
     }
 
     function _connectWeb3() {
+    	// var web3 = window.web3
         if (typeof web3 !== 'undefined') {
             web3api = new Web3(web3.currentProvider);
             _checkMetaMaskUnlock();
@@ -160,9 +161,9 @@
                     if (error) {
                         _showMessage(false, error.message);
                     } else {
-                        _showMessage(true, '打赏成功! 交易地址: <a href="https://etherscan.io/tx/' + txHash+'" target="_blank">https://etherscan.io/tx/' + txHash+'</a>');
+                        _showMessage(true, '打赏成功! 交易地址: <br><a href="https://etherscan.io/tx/' + txHash+'" target="_blank">https://etherscan.io/tx/' + txHash+'</a>');
                         $("#_reward_payment").html("感谢(5秒后关闭)")
-                        setTimeOut(function(){
+                        setTimeout(function(){
                             $("#_shadow").hide()
                         },5)
                     }
