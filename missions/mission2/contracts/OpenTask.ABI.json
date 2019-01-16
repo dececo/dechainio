@@ -1,0 +1,287 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "solutionId",
+				"type": "string"
+			}
+		],
+		"name": "accept",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "solutionId",
+				"type": "string"
+			}
+		],
+		"name": "reject",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newDETAddress",
+				"type": "address"
+			}
+		],
+		"name": "setDETAddress",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getDETAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "missionId",
+				"type": "string"
+			},
+			{
+				"name": "rewardInWei",
+				"type": "uint256"
+			}
+		],
+		"name": "publish",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "isOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "solutionId",
+				"type": "string"
+			},
+			{
+				"name": "arbitrationId",
+				"type": "string"
+			}
+		],
+		"name": "confirm",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "solutionId",
+				"type": "string"
+			},
+			{
+				"name": "missionId",
+				"type": "string"
+			},
+			{
+				"name": "data",
+				"type": "string"
+			}
+		],
+		"name": "solve",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "initialDETAddress",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "newDETAddress",
+				"type": "address"
+			}
+		],
+		"name": "SetDETAddress",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "missionId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "rewardInWei",
+				"type": "uint256"
+			}
+		],
+		"name": "Publish",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "solutionId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "missionId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "data",
+				"type": "string"
+			}
+		],
+		"name": "Solve",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "solutionId",
+				"type": "string"
+			}
+		],
+		"name": "Accept",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "solutionId",
+				"type": "string"
+			}
+		],
+		"name": "Reject",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "solutionId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "arbitrationId",
+				"type": "string"
+			}
+		],
+		"name": "Confirm",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	}
+]
